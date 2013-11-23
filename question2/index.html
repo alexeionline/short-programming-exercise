@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<script type="text/javascript" src="static/js/jquery.js"></script>
+	<script type="text/javascript" src="static/js/underscore.js"></script>
+	<script type="text/javascript" src="static/js/backbone.js"></script>
+</head>
+<body>
+	<div class="calc container text-center"></div>
+
+	<script id='btnTmpl' type="text/template">
+		<button data-val=<%= val %> class='btn btn-default'><%= val %></button>
+	</script>
+
+	<script id='opBtnTmpl' type="text/template">
+		<button data-val=<%= name %> class='btn btn-success'><%= title %></button>
+	</script>
+
+	<script id='dsplTmpl' type="text/template">
+		<input class='display form-control text-right' disabled value='0' />
+	</script>
+
+	<script id='calcTmpl' type="text/template">
+		<div class='displayView row '></div>
+		<div class='digitBtnsView row'></div>
+		<div class='opBtnsView row'></div>
+		<div class='cancelBtnView row'>
+			<button class='cancelBtn btn btn-danger'>C</button>
+		</div>
+	</script>
+
+	<script type="text/javascript" src="static/js/engine/init.js"></script>
+	<script type="text/javascript" src="static/js/engine/availableOperations.js"></script>
+	<script type="text/javascript" src="static/js/engine/models/digit.js"></script>
+	<script type="text/javascript" src="static/js/engine/models/operand.js"></script>
+	<script type="text/javascript" src="static/js/engine/models/calculator.js"></script>
+	<script type="text/javascript" src="static/js/engine/collections/digits.js"></script>
+	<script type="text/javascript" src="static/js/engine/collections/operands.js"></script>
+	<script type="text/javascript" src="static/js/engine/views/display.js"></script>
+	<script type="text/javascript" src="static/js/engine/views/digitBtnsLayout.js"></script>
+	<script type="text/javascript" src="static/js/engine/views/opBtnsLayout.js"></script>
+	<script type="text/javascript" src="static/js/engine/views/calculator.js"></script>
+	<script type="text/javascript" src="static/js/engine/calc.js"></script>	
+</body>
+</html>
